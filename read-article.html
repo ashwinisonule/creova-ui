@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CREOVA — The Future of Digital Experiences</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #f1f5f7;
+            color: #7892aa;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           TOP BAR
+        ========================= */
+
+        .top-bar {
+            background: #30465b;
+            height: 42px;
+        }
+
+        .top-container {
+            max-width: 1180px;
+            height: 100%;
+            margin: auto;
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .top-left {
+            display: flex;
+            gap: 25px;
+        }
+
+        .top-left span {
+            color: #d8e1e8;
+            font-size: 10px;
+        }
+
+        .top-left i {
+            color: #00b89c;
+            margin-right: 6px;
+        }
+
+        .top-social {
+            display: flex;
+            gap: 14px;
+        }
+
+        .top-social a {
+            color: #d8e1e8;
+            font-size: 10px;
+            transition: .3s;
+        }
+
+        .top-social a:hover {
+            color: #00b89c;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            height: 82px;
+            background: #fff;
+            border-bottom: 1px solid #e8edf0;
+        }
+
+        .nav-container {
+            max-width: 1180px;
+            height: 100%;
+            margin: auto;
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Raleway', sans-serif;
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #30465b;
+        }
+
+        .logo span {
+            color: #00b89c;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 31px;
+        }
+
+        nav a {
+            color: #668198;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: .3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #00b89c;
+        }
+
+        .search {
+            color: #668198;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .page-hero {
+            min-height: 390px;
+            background:
+                linear-gradient(
+                    rgba(48,70,91,.83),
+                    rgba(48,70,91,.83)
+                ),
+                url("https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1600&q=85");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero-content span {
+            color: #00b89c;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+
+        .hero-content h1 {
+            color: #fff;
+            font-family: 'Raleway', sans-serif;
+            font-size: 48px;
+            line-height: 1.2;
+            margin: 18px 0;
+        }
+
+        .hero-content h1 strong {
+            color: #00b89c;
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            color: #d9e2e8;
+            max-width: 650px;
+            margin: auto;
+            font-size: 13px;
+            line-height: 1.9;
+        }
+
+
+        /* =========================
+           ARTICLE
+        ========================= */
+
+        .article-section {
+            padding: 90px 7% 110px;
+        }
+
+        .article-container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .article-image {
+            width: 100%;
+            height: 520px;
+            overflow: hidden;
+            margin-bottom: 45px;
+            background: #ddd;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+
+        /* =========================
+           ARTICLE CONTENT
+        ========================= */
+
+        .article-content {
+            background: #fff;
+            padding: 60px 70px;
+        }
+
+        .article-category {
+            display: inline-block;
+            color: #00b89c;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 28px;
+            margin-bottom: 25px;
+        }
+
+        .article-meta span {
+            color: #9aabb9;
+            font-size: 10px;
+        }
+
+        .article-meta i {
+            color: #00b89c;
+            margin-right: 5px;
+        }
+
+        .article-content h2 {
+            color: #506f8d;
+            font-family: 'Raleway', sans-serif;
+            font-size: 40px;
+            line-height: 1.3;
+            margin-bottom: 28px;
+        }
+
+        .article-content p {
+            color: #7892aa;
+            font-size: 13px;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        .article-content h3 {
+            color: #506f8d;
+            font-family: 'Raleway', sans-serif;
+            font-size: 23px;
+            margin-top: 40px;
+            margin-bottom: 14px;
+        }
+
+
+        /* =========================
+           QUOTE
+        ========================= */
+
+        .article-content blockquote {
+            margin: 38px 0;
+            padding: 28px 32px;
+
+            background: #f1f5f7;
+            border-left: 4px solid #00b89c;
+
+            color: #506f8d;
+
+            font-family: 'Raleway', sans-serif;
+            font-size: 19px;
+            line-height: 1.7;
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           ARTICLE LIST
+        ========================= */
+
+        .article-content ul {
+            margin: 20px 0 25px 20px;
+        }
+
+        .article-content li {
+            color: #7892aa;
+            font-size: 13px;
+            line-height: 2;
+            margin-bottom: 8px;
+            padding-left: 5px;
+        }
+
+        .article-content li::marker {
+            color: #00b89c;
+        }
+
+
+        /* =========================
+           SHARE
+        ========================= */
+
+        .share-box {
+            margin-top: 45px;
+            padding-top: 30px;
+            border-top: 1px solid #e5ebee;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .share-box span {
+            color: #506f8d;
+            font-family: 'Raleway', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .share-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .share-icons a {
+            width: 35px;
+            height: 35px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #f1f5f7;
+            color: #668198;
+
+            font-size: 11px;
+
+            transition: .3s;
+        }
+
+        .share-icons a:hover {
+            background: #00b89c;
+            color: #fff;
+        }
+
+
+        /* =========================
+           BACK BUTTON
+        ========================= */
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            margin-top: 35px;
+
+            padding: 15px 24px;
+
+            background: #00b89c;
+            color: #fff;
+
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 1px;
+
+            transition: .3s;
+        }
+
+        .back-button:hover {
+            background: #30465b;
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #30465b;
+            padding: 70px 7% 0;
+        }
+
+        .footer-container {
+            max-width: 1180px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns:
+                1.2fr
+                1fr
+                .8fr
+                1.2fr;
+
+            gap: 50px;
+        }
+
+        .footer-column h3 {
+            color: #fff;
+            font-size: 10px;
+            letter-spacing: 2px;
+            margin-bottom: 22px;
+        }
+
+        .footer-logo {
+            color: #fff;
+            font-family: 'Raleway', sans-serif;
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo span {
+            color: #00b89c;
+        }
+
+        .footer-column p {
+            color: #aabac6;
+            font-size: 11px;
+            line-height: 1.9;
+            margin-bottom: 9px;
+        }
+
+        .footer-column p a {
+            color: #aabac6;
+            transition: .3s;
+        }
+
+        .footer-column p a:hover {
+            color: #00b89c;
+        }
+
+        .more-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            margin-top: 8px;
+
+            color: #00b89c;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .subscribe-form {
+            display: flex;
+            margin-top: 18px;
+        }
+
+        .subscribe-form input {
+            width: 65%;
+            border: none;
+            outline: none;
+            padding: 13px;
+
+            background: #3c5367;
+            color: #fff;
+
+            font-size: 10px;
+        }
+
+        .subscribe-form button {
+            border: none;
+            padding: 0 15px;
+
+            background: #00b89c;
+            color: #fff;
+
+            font-size: 8px;
+            font-weight: 700;
+
+            cursor: pointer;
+        }
+
+        .footer-bottom {
+            max-width: 1180px;
+            margin: 55px auto 0;
+
+            padding: 22px 0;
+
+            border-top: 1px solid rgba(255,255,255,.1);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-bottom p,
+        .footer-bottom a,
+        .footer-bottom span {
+            color: #91a5b4;
+            font-size: 9px;
+        }
+
+        .footer-bottom div {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-bottom a:hover {
+            color: #00b89c;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            nav {
+                gap: 15px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            .top-left {
+                gap: 10px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .page-hero {
+                min-height: 330px;
+            }
+
+            .hero-content h1 {
+                font-size: 35px;
+            }
+
+            .article-section {
+                padding: 60px 5% 80px;
+            }
+
+            .article-image {
+                height: 350px;
+            }
+
+            .article-content {
+                padding: 40px 30px;
+            }
+
+            .article-content h2 {
+                font-size: 30px;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .top-bar {
+                height: auto;
+                padding: 10px 0;
+            }
+
+            .top-container {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .top-left {
+                flex-direction: column;
+                text-align: center;
+                gap: 5px;
+            }
+
+            .page-hero {
+                min-height: 300px;
+                padding: 50px 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 28px;
+            }
+
+            .article-image {
+                height: 250px;
+                margin-bottom: 25px;
+            }
+
+            .article-content {
+                padding: 30px 22px;
+            }
+
+            .article-content h2 {
+                font-size: 26px;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .share-box {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .footer-bottom div {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<div class="top-bar">
+
+    <div class="top-container">
+
+        <div class="top-left">
+
+            <span>
+                <i class="fa-regular fa-envelope"></i>
+                hello@creova.com
+            </span>
+
+            <span>
+                <i class="fa-solid fa-mobile-screen"></i>
+                +91 98765 43210
+            </span>
+
+        </div>
+
+
+        <div class="top-social">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-behance"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-dribbble"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            CREOVA<span>.</span>
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a href="portfolio.html">
+                PORTFOLIO
+            </a>
+
+            <a href="blog.html" class="active">
+                BLOG
+            </a>
+
+            <a href="about.html">
+                ABOUT
+            </a>
+
+            <a href="services.html">
+                SERVICES
+            </a>
+
+            <a href="contact.html">
+                CONTACT
+            </a>
+
+        </nav>
+
+
+        <div class="search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="page-hero">
+
+    <div class="hero-content">
+
+        <span>
+            DIGITAL EXPERIENCE
+        </span>
+
+        <h1>
+            Designing Digital
+            <strong>Experiences That Matter.</strong>
+        </h1>
+
+        <p>
+            Discover how thoughtful design, technology and
+            creativity come together to build better digital products.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ARTICLE
+========================= -->
+
+<section class="article-section">
+
+    <div class="article-container">
+
+
+        <!-- FEATURE IMAGE -->
+
+        <div class="article-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1600&q=85"
+                alt="Digital Design">
+
+        </div>
+
+
+
+        <!-- ARTICLE CONTENT -->
+
+        <article class="article-content">
+
+
+            <span class="article-category">
+                DESIGN & DEVELOPMENT
+            </span>
+
+
+            <div class="article-meta">
+
+                <span>
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    August 10, 2026
+
+                </span>
+
+
+                <span>
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    6 min read
+
+                </span>
+
+
+                <span>
+
+                    <i class="fa-regular fa-user"></i>
+
+                    CREOVA TEAM
+
+                </span>
+
+            </div>
+
+
+
+            <h2>
+                Designing Digital Experiences
+                That Matter
+            </h2>
+
+
+
+            <p>
+                The digital world has changed the way people
+                discover brands, communicate with businesses and
+                interact with products. A website or application
+                is no longer simply a collection of pages and
+                features — it is an experience.
+            </p>
+
+
+            <p>
+                Successful digital products combine thoughtful
+                design, useful technology and a deep understanding
+                of the people using them. When these elements work
+                together, the result feels simple, natural and
+                meaningful.
+            </p>
+
+
+
+            <blockquote>
+                “Great digital experiences are created by
+                understanding people first and technology second.”
+            </blockquote>
+
+
+
+            <h3>
+                Understanding the User
+            </h3>
+
+
+            <p>
+                The first step in creating a successful digital
+                experience is understanding the people who will
+                use it. What are they looking for? What problems
+                are they trying to solve? What information do they
+                need?
+            </p>
+
+
+            <p>
+                User research helps designers answer these questions
+                before visual decisions are made. It allows teams
+                to build experiences around real needs instead of
+                assumptions.
+            </p>
+
+
+
+            <h3>
+                The Importance of Visual Design
+            </h3>
+
+
+            <p>
+                Visual design creates the first impression.
+                Typography, spacing, colors, imagery and layout
+                work together to communicate the personality of
+                a brand.
+            </p>
+
+
+            <p>
+                A strong visual system also creates consistency.
+                When users see familiar patterns throughout a
+                website, they can navigate the experience more
+                comfortably.
+            </p>
+
+
+
+            <h3>
+                Simplicity Creates Better Experiences
+            </h3>
+
+
+            <p>
+                Modern interfaces often contain many features,
+                but more features do not always mean a better
+                experience. Users should be able to understand
+                the purpose of a page quickly.
+            </p>
+
+
+            <ul>
+
+                <li>
+                    Keep navigation clear and predictable.
+                </li>
+
+                <li>
+                    Remove unnecessary visual elements.
+                </li>
+
+                <li>
+                    Use clear and meaningful labels.
+                </li>
+
+                <li>
+                    Give important information enough space.
+                </li>
+
+                <li>
+                    Make actions easy to understand.
+                </li>
+
+            </ul>
+
+
+
+            <h3>
+                Designing for Every Device
+            </h3>
+
+
+            <p>
+                People access digital products from phones,
+                tablets, laptops and large desktop screens.
+                A modern experience must adapt to all of them.
+            </p>
+
+
+            <p>
+                Responsive design allows content and layouts
+                to automatically adjust to different screen sizes.
+                This creates a consistent experience regardless
+                of the device being used.
+            </p>
+
+
+
+            <h3>
+                Technology Behind the Experience
+            </h3>
+
+
+            <p>
+                Great design needs reliable technology behind it.
+                Clean HTML, CSS and JavaScript can transform a
+                visual concept into a fast and interactive website.
+            </p>
+
+
+            <p>
+                Development should support the design rather than
+                work against it. Designers and developers working
+                together can create products that are both beautiful
+                and functional.
+            </p>
+
+
+
+            <h3>
+                Performance Matters
+            </h3>
+
+
+            <p>
+                Users expect websites to load quickly. Slow pages
+                can create frustration and may cause visitors to
+                leave before discovering the content.
+            </p>
+
+
+            <p>
+                Optimized images, clean code, efficient layouts
+                and thoughtful loading strategies can make a
+                significant difference to the overall experience.
+            </p>
+
+
+
+            <h3>
+                Creating Meaningful Interactions
+            </h3>
+
+
+            <p>
+                Small interactions can make a digital product
+                feel more responsive. Buttons, forms, menus and
+                transitions should provide clear feedback and
+                help users understand what is happening.
+            </p>
+
+
+            <p>
+                The goal is not to add animations everywhere.
+                Instead, interactions should have a purpose and
+                improve usability.
+            </p>
+
+
+
+            <h3>
+                Design, Technology and Strategy
+            </h3>
+
+
+            <p>
+                The strongest digital products bring together
+                three important areas: design, technology and
+                business strategy.
+            </p>
+
+
+            <p>
+                Design focuses on the user experience. Technology
+                makes the experience possible. Strategy ensures
+                that the product supports meaningful business goals.
+            </p>
+
+
+
+            <h3>
+                The Future of Digital Experiences
+            </h3>
+
+
+            <p>
+                As technology continues to evolve, digital
+                experiences will become more personalized,
+                accessible and interactive.
+            </p>
+
+
+            <p>
+                Artificial intelligence, smarter interfaces and
+                new interaction patterns will create exciting
+                opportunities for designers and developers.
+            </p>
+
+
+
+            <blockquote>
+                “The future belongs to digital products that
+                make technology feel simple, useful and human.”
+            </blockquote>
+
+
+
+            <h3>
+                Final Thoughts
+            </h3>
+
+
+            <p>
+                Creating a successful digital experience is not
+                about following every trend. It is about understanding
+                people, solving real problems and making technology
+                easier to use.
+            </p>
+
+
+            <p>
+                When creativity, strategy and technology work
+                together, even a simple website can become a
+                memorable experience.
+            </p>
+
+
+
+            <!-- SHARE -->
+
+            <div class="share-box">
+
+                <span>
+                    SHARE THIS ARTICLE
+                </span>
+
+
+                <div class="share-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BACK -->
+
+            <a
+                href="blog.html"
+                class="back-button">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                BACK TO BLOG
+
+            </a>
+
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <!-- COLUMN 1 -->
+
+        <div class="footer-column">
+
+            <h3>
+                WHO WE ARE
+            </h3>
+
+
+            <div class="footer-logo">
+                CREOVA<span>.</span>
+            </div>
+
+
+            <p>
+                A creative digital studio focused on design,
+                development and meaningful digital experiences.
+            </p>
+
+
+            <a
+                href="about.html"
+                class="more-link">
+
+                MORE ABOUT US
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- COLUMN 2 -->
+
+        <div class="footer-column">
+
+            <h3>
+                GET IN TOUCH
+            </h3>
+
+
+            <p>
+                Maharashtra, India
+            </p>
+
+
+            <p>
+                +91 98765 43210
+            </p>
+
+
+            <p>
+                hello@creova.com
+            </p>
+
+        </div>
+
+
+
+        <!-- COLUMN 3 -->
+
+        <div class="footer-column">
+
+            <h3>
+                EXPLORE
+            </h3>
+
+
+            <p>
+                <a href="index.html">
+                    Home
+                </a>
+            </p>
+
+
+            <p>
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+            </p>
+
+
+            <p>
+                <a href="blog.html">
+                    Blog
+                </a>
+            </p>
+
+
+            <p>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </p>
+
+        </div>
+
+
+
+        <!-- COLUMN 4 -->
+
+        <div class="footer-column">
+
+            <h3>
+                FREE UPDATES
+            </h3>
+
+
+            <p>
+                Subscribe to receive our latest news,
+                creative ideas and project updates.
+            </p>
+
+
+            <form class="subscribe-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required>
+
+
+                <button type="submit">
+                    SUBSCRIBE
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 CREOVA. All Rights Reserved.
+        </p>
+
+
+        <div>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <span>·</span>
+
+            <a href="portfolio.html">
+                Portfolio
+            </a>
+
+            <span>·</span>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <span>·</span>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <span>·</span>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <span>·</span>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

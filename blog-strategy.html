@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CREOVA — Creative Process</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="blog.css">
+
+    <style>
+
+        /* ================= ARTICLE ================= */
+
+        .article-section {
+            padding: 90px 7% 110px;
+            background: #f1f5f7;
+        }
+
+        .article-container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .article-image {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article-content {
+            background: #fff;
+            padding: 55px 65px;
+        }
+
+        .article-category {
+            color: #00b89c;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 25px;
+            margin: 18px 0 25px;
+            color: #91a3b1;
+            font-size: 10px;
+        }
+
+        .article-meta i {
+            color: #00b89c;
+            margin-right: 5px;
+        }
+
+        .article-content h2 {
+            color: #506f8d;
+            font-family: 'Raleway', sans-serif;
+            font-size: 38px;
+            line-height: 1.3;
+            margin-bottom: 25px;
+        }
+
+        .article-content h3 {
+            color: #506f8d;
+            font-family: 'Raleway', sans-serif;
+            font-size: 22px;
+            margin: 35px 0 13px;
+        }
+
+        .article-content p {
+            color: #7892aa;
+            font-size: 13px;
+            line-height: 2;
+            margin-bottom: 18px;
+        }
+
+        .article-content blockquote {
+            margin: 35px 0;
+            padding: 25px 30px;
+            background: #f1f5f7;
+            border-left: 4px solid #00b89c;
+            color: #506f8d;
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            margin-top: 30px;
+            padding: 15px 23px;
+            background: #00b89c;
+            color: #fff;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: .3s;
+        }
+
+        .back-button:hover {
+            background: #30465b;
+            transform: translateY(-2px);
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 768px) {
+
+            .article-image {
+                height: 350px;
+            }
+
+            .article-content {
+                padding: 40px 30px;
+            }
+
+            .article-content h2 {
+                font-size: 30px;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .article-section {
+                padding: 60px 5% 80px;
+            }
+
+            .article-image {
+                height: 250px;
+                margin-bottom: 25px;
+            }
+
+            .article-content {
+                padding: 30px 22px;
+            }
+
+            .article-content h2 {
+                font-size: 26px;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="top-bar">
+
+    <div class="top-container">
+
+        <div class="top-left">
+
+            <span>
+                <i class="fa-regular fa-envelope"></i>
+                hello@creova.com
+            </span>
+
+            <span>
+                <i class="fa-solid fa-mobile-screen"></i>
+                +91 98765 43210
+            </span>
+
+        </div>
+
+        <div class="top-social">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-behance"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-dribbble"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            CREOVA<span>.</span>
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a href="portfolio.html">
+                PORTFOLIO
+            </a>
+
+            <a href="blog.html" class="active">
+                BLOG
+            </a>
+
+            <a href="about.html">
+                ABOUT
+            </a>
+
+            <a href="services.html">
+                SERVICES
+            </a>
+
+            <a href="contact.html">
+                CONTACT
+            </a>
+
+        </nav>
+
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="page-hero">
+
+    <div class="hero-content">
+
+        <span>
+            CREATIVE PROCESS
+        </span>
+
+        <h1>
+            From Idea
+            <strong>to Execution.</strong>
+        </h1>
+
+        <p>
+            A simple creative process that turns ideas into
+            meaningful digital experiences.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ARTICLE ================= -->
+
+<section class="article-section">
+
+    <div class="article-container">
+
+
+        <!-- IMAGE -->
+
+        <div class="article-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1500&q=85"
+                alt="Creative Team">
+
+        </div>
+
+
+        <!-- CONTENT -->
+
+        <article class="article-content">
+
+            <span class="article-category">
+                CREATIVE PROCESS
+            </span>
+
+
+            <div class="article-meta">
+
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    July 30, 2026
+                </span>
+
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    5 min read
+                </span>
+
+            </div>
+
+
+            <h2>
+                From Idea to Execution:
+                Our Creative Process
+            </h2>
+
+
+            <p>
+                Every successful digital project begins with an idea.
+                But turning that idea into a useful and polished
+                product requires planning, creativity and collaboration.
+            </p>
+
+
+            <p>
+                At CREOVA, we follow a structured creative process
+                that allows us to transform early concepts into
+                thoughtful digital experiences.
+            </p>
+
+
+            <blockquote>
+                “Great digital products are not created in one step.
+                They are built through ideas, testing and refinement.”
+            </blockquote>
+
+
+            <h3>
+                01. Discovery
+            </h3>
+
+            <p>
+                The first step is understanding the project.
+                We identify the goals, audience, challenges and
+                requirements before creating any visual design.
+            </p>
+
+
+            <h3>
+                02. Research
+            </h3>
+
+            <p>
+                Research helps us understand users, competitors
+                and current design trends. This stage gives the
+                project a strong foundation and reduces unnecessary
+                assumptions.
+            </p>
+
+
+            <h3>
+                03. Planning
+            </h3>
+
+            <p>
+                Once the goals are clear, we create the structure
+                of the project. This can include user flows,
+                content structure, page hierarchy and technical
+                requirements.
+            </p>
+
+
+            <h3>
+                04. Design
+            </h3>
+
+            <p>
+                This is where ideas become visual. We work on
+                typography, colors, layouts, imagery and interaction
+                patterns to create a clear visual direction.
+            </p>
+
+
+            <h3>
+                05. Development
+            </h3>
+
+            <p>
+                The approved design is then transformed into a
+                working digital experience. Clean code, responsive
+                layouts and reusable components help create a
+                reliable product.
+            </p>
+
+
+            <h3>
+                06. Testing
+            </h3>
+
+            <p>
+                Before launch, we test the project across different
+                screen sizes and browsers. We also check navigation,
+                forms, interactions and overall usability.
+            </p>
+
+
+            <h3>
+                07. Launch & Improve
+            </h3>
+
+            <p>
+                Launching the project is not the end. Real users
+                provide valuable feedback that can help improve
+                the product over time.
+            </p>
+
+
+            <h3>
+                Why This Process Matters
+            </h3>
+
+            <p>
+                A clear process keeps everyone aligned and helps
+                prevent confusion during development. It also gives
+                creative ideas enough space to evolve into practical
+                solutions.
+            </p>
+
+
+            <h3>
+                Final Thoughts
+            </h3>
+
+            <p>
+                The best digital experiences come from a balance
+                between creativity and strategy. Start with a clear
+                idea, understand the user and continuously improve
+                the result.
+            </p>
+
+
+            <a
+                href="blog.html"
+                class="back-button">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                BACK TO BLOG
+
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <h3>
+                WHO WE ARE
+            </h3>
+
+            <div class="footer-logo">
+                CREOVA<span>.</span>
+            </div>
+
+            <p>
+                A creative digital studio focused on design,
+                development and meaningful digital experiences.
+            </p>
+
+            <a
+                href="about.html"
+                class="more-link">
+
+                MORE ABOUT US
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                GET IN TOUCH
+            </h3>
+
+            <p>
+                Maharashtra, India
+            </p>
+
+            <p>
+                +91 98765 43210
+            </p>
+
+            <p>
+                hello@creova.com
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                EXPLORE
+            </h3>
+
+            <p>
+                <a href="index.html">
+                    Home
+                </a>
+            </p>
+
+            <p>
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+            </p>
+
+            <p>
+                <a href="blog.html">
+                    Blog
+                </a>
+            </p>
+
+            <p>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                FREE UPDATES
+            </h3>
+
+            <p>
+                Subscribe to receive our latest news,
+                creative ideas and project updates.
+            </p>
+
+            <form class="subscribe-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <button type="submit">
+                    SUBSCRIBE
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 CREOVA. All Rights Reserved.
+        </p>
+
+        <div>
+
+            <a href="index.html">Home</a>
+
+            <span>·</span>
+
+            <a href="portfolio.html">Portfolio</a>
+
+            <span>·</span>
+
+            <a href="blog.html">Blog</a>
+
+            <span>·</span>
+
+            <a href="about.html">About</a>
+
+            <span>·</span>
+
+            <a href="services.html">Services</a>
+
+            <span>·</span>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

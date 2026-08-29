@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CREOVA — Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="top-bar">
+
+    <div class="top-container">
+
+        <div class="top-left">
+
+            <span>
+                <i class="fa-regular fa-envelope"></i>
+                hello@creova.com
+            </span>
+
+            <span>
+                <i class="fa-solid fa-mobile-screen"></i>
+                +91 98765 43210
+            </span>
+
+        </div>
+
+
+        <div class="top-social">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-behance"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-basketball"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            CREOVA<span>.</span>
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a href="portfolio.html" class="active">
+                PORTFOLIO
+            </a>
+
+            <a href="blog.html">
+                BLOG
+            </a>
+
+            <a href="about.html">
+                ABOUT
+            </a>
+
+            <a href="services.html">
+                SERVICES
+            </a>
+
+            <a href="contact.html">
+                CONTACT
+            </a>
+
+        </nav>
+
+
+        <button class="mobile-menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <div class="search"id="searchIcon">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= PAGE HERO ================= -->
+
+<section class="page-hero">
+
+    <div class="page-hero-content">
+
+        <span>
+            OUR PORTFOLIO
+        </span>
+
+        <h1>
+            Creative Work
+            <strong>Made With Purpose.</strong>
+        </h1>
+
+        <p>
+            Explore a selection of our latest projects,
+            created with thoughtful design, creativity
+            and modern technology.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PORTFOLIO INTRO ================= -->
+
+<section class="portfolio-intro">
+
+    <div class="intro-content">
+
+        <span class="section-label">
+            SELECTED PROJECTS
+        </span>
+
+        <h2>
+            We Create Things
+            <strong>We Believe In.</strong>
+        </h2>
+
+        <p>
+            Every project starts with an idea. We transform
+            those ideas into meaningful digital experiences
+            through strategy, design and development.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FILTER ================= -->
+
+<section class="portfolio-section">
+
+    <div class="filter-buttons">
+
+        <button class="filter-btn active"
+                data-filter="all">
+            ALL
+        </button>
+
+        <button class="filter-btn"
+                data-filter="web">
+            WEB DESIGN
+        </button>
+
+        <button class="filter-btn"
+                data-filter="branding">
+            BRANDING
+        </button>
+
+        <button class="filter-btn"
+                data-filter="ui">
+            UI / UX
+        </button>
+
+        <button class="filter-btn"
+                data-filter="creative">
+            CREATIVE
+        </button>
+
+    </div>
+
+
+    <!-- ================= PROJECT GRID ================= -->
+
+    <div class="project-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <article class="project-card large"
+                 data-category="branding">
+
+            <div class="project-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1400&q=85"
+                    alt="Brand Identity">
+
+                <div class="project-hover">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <span>
+                    BRANDING
+                </span>
+
+                <h3>
+                    Modern Brand Identity
+                </h3>
+
+                <p>
+                    Visual identity & creative direction
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 2 -->
+
+        <article class="project-card"
+                 data-category="web">
+
+            <div class="project-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=85"
+                    alt="Website Design">
+
+                <div class="project-hover">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <span>
+                    WEB DESIGN
+                </span>
+
+                <h3>
+                    Digital Experience
+                </h3>
+
+                <p>
+                    Website design & development
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 3 -->
+
+        <article class="project-card"
+                 data-category="ui">
+
+            <div class="project-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1200&q=85"
+                    alt="UI UX Design">
+
+                <div class="project-hover">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <span>
+                    UI / UX
+                </span>
+
+                <h3>
+                    Product Interface
+                </h3>
+
+                <p>
+                    User interface & experience design
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 4 -->
+
+        <article class="project-card"
+                 data-category="creative">
+
+            <div class="project-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=1200&q=85"
+                    alt="Creative Campaign">
+
+                <div class="project-hover">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <span>
+                    CREATIVE
+                </span>
+
+                <h3>
+                    Visual Campaign
+                </h3>
+
+                <p>
+                    Creative concept & art direction
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 5 -->
+
+        <article class="project-card large"
+                 data-category="web">
+
+            <div class="project-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1400&q=85"
+                    alt="Workspace Website">
+
+                <div class="project-hover">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <span>
+                    WEB DESIGN
+                </span>
+
+                <h3>
+                    Creative Workspace
+                </h3>
+
+                <p>
+                    Corporate website experience
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 6 -->
+
+        <article class="project-card"
+                 data-category="branding">
+
+            <div class="project-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85"
+                    alt="Studio Branding">
+
+                <div class="project-hover">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <span>
+                    BRANDING
+                </span>
+
+                <h3>
+                    Studio Identity
+                </h3>
+
+                <p>
+                    Brand strategy & visual design
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 7 -->
+
+        <article class="project-card"
+                 data-category="ui">
+
+            <div class="project-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85"
+                    alt="Dashboard UI">
+
+                <div class="project-hover">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <span>
+                    UI / UX
+                </span>
+
+                <h3>
+                    Analytics Dashboard
+                </h3>
+
+                <p>
+                    Product design & interaction
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 8 -->
+
+        <article class="project-card"
+                 data-category="creative">
+
+            <div class="project-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=85"
+                    alt="Creative Project">
+
+                <div class="project-hover">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <span>
+                    CREATIVE
+                </span>
+
+                <h3>
+                    Editorial Concept
+                </h3>
+
+                <p>
+                    Art direction & visual storytelling
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 9 -->
+
+        <article class="project-card"
+                 data-category="web">
+
+            <div class="project-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=85"
+                    alt="Ecommerce Website">
+
+                <div class="project-hover">
+
+                    <div class="project-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-info">
+
+                <span>
+                    WEB DESIGN
+                </span>
+
+                <h3>
+                    E-Commerce Experience
+                </h3>
+
+                <p>
+                    Online store design & development
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stats-container">
+
+
+        <div class="stat">
+
+            <strong>
+                40+
+            </strong>
+
+            <span>
+                PROJECTS
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>
+                25+
+            </strong>
+
+            <span>
+                HAPPY CLIENTS
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>
+                5+
+            </strong>
+
+            <span>
+                YEARS EXPERIENCE
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>
+                100%
+            </strong>
+
+            <span>
+                PASSION
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="portfolio-cta">
+
+    <div>
+
+        <span>
+            HAVE A PROJECT IN MIND?
+        </span>
+
+        <h2>
+            Let's Build Something
+            <strong>Great Together.</strong>
+        </h2>
+
+        <p>
+            Tell us about your next idea and let's turn
+            it into something remarkable.
+        </p>
+
+        <a href="contact.html">
+
+            START A PROJECT
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <h3>
+                WHO WE ARE
+            </h3>
+
+            <div class="footer-logo">
+                CREOVA<span>.</span>
+            </div>
+
+            <p>
+                A creative digital studio focused on design,
+                development and meaningful digital experiences.
+            </p>
+
+            <a href="about.html" class="more-link">
+
+                MORE ABOUT US
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                LATEST WORKS
+            </h3>
+
+            <div class="footer-gallery">
+
+                <a href="portfolio.html">
+                    <img
+                        src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=400&q=80"
+                        alt="">
+                </a>
+
+                <a href="portfolio.html">
+                    <img
+                        src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=400&q=80"
+                        alt="">
+                </a>
+
+                <a href="portfolio.html">
+                    <img
+                        src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=400&q=80"
+                        alt="">
+                </a>
+
+                <a href="portfolio.html">
+                    <img
+                        src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=400&q=80"
+                        alt="">
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                GET IN TOUCH
+            </h3>
+
+            <p>
+                Have a question or want to discuss a project?
+                We'd love to hear from you.
+            </p>
+
+            <ul class="contact-list">
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Maharashtra, India
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    +91 98765 43210
+                </li>
+
+                <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    hello@creova.com
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                FREE UPDATES
+            </h3>
+
+            <p>
+                Subscribe to receive our latest news,
+                creative ideas and project updates.
+            </p>
+
+            <form class="subscribe-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    required>
+
+                <button type="submit">
+                    SUBSCRIBE
+                </button>
+
+            </form>
+
+            <div class="subscribe-message"></div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 CREOVA. All Rights Reserved.
+        </p>
+
+        <div>
+
+            <a href="index.html">Home</a>
+
+            <span>·</span>
+
+            <a href="portfolio.html">Portfolio</a>
+
+            <span>·</span>
+
+            <a href="blog.html">Blog</a>
+
+            <span>·</span>
+
+            <a href="about.html">About</a>
+
+            <span>·</span>
+
+            <a href="services.html">Services</a>
+
+            <span>·</span>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- BACK TO TOP -->
+
+<button id="backTop">
+
+    <i class="fa-solid fa-chevron-up"></i>
+
+</button>
+
+
+<script src="portfolio.js"></script>
+
+</body>
+
+</html>

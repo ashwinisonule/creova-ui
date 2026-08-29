@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CREOVA — Responsive Design</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="blog.css">
+
+    <style>
+
+        /* ================= ARTICLE ================= */
+
+        .article-section {
+            padding: 90px 7% 110px;
+            background: #f1f5f7;
+        }
+
+        .article-container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .article-image {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article-content {
+            background: #fff;
+            padding: 55px 65px;
+        }
+
+        .article-category {
+            color: #00b89c;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 25px;
+            margin: 18px 0 25px;
+            color: #91a3b1;
+            font-size: 10px;
+        }
+
+        .article-meta i {
+            color: #00b89c;
+            margin-right: 5px;
+        }
+
+        .article-content h2 {
+            color: #506f8d;
+            font-family: 'Raleway', sans-serif;
+            font-size: 38px;
+            line-height: 1.3;
+            margin-bottom: 25px;
+        }
+
+        .article-content h3 {
+            color: #506f8d;
+            font-family: 'Raleway', sans-serif;
+            font-size: 22px;
+            margin: 35px 0 13px;
+        }
+
+        .article-content p {
+            color: #7892aa;
+            font-size: 13px;
+            line-height: 2;
+            margin-bottom: 18px;
+        }
+
+        .article-content blockquote {
+            margin: 35px 0;
+            padding: 25px 30px;
+            background: #f1f5f7;
+            border-left: 4px solid #00b89c;
+            color: #506f8d;
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            margin-top: 30px;
+            padding: 15px 23px;
+            background: #00b89c;
+            color: #fff;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: .3s;
+        }
+
+        .back-button:hover {
+            background: #30465b;
+            transform: translateY(-2px);
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 768px) {
+
+            .article-image {
+                height: 350px;
+            }
+
+            .article-content {
+                padding: 40px 30px;
+            }
+
+            .article-content h2 {
+                font-size: 30px;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .article-section {
+                padding: 60px 5% 80px;
+            }
+
+            .article-image {
+                height: 250px;
+                margin-bottom: 25px;
+            }
+
+            .article-content {
+                padding: 30px 22px;
+            }
+
+            .article-content h2 {
+                font-size: 26px;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="top-bar">
+
+    <div class="top-container">
+
+        <div class="top-left">
+
+            <span>
+                <i class="fa-regular fa-envelope"></i>
+                hello@creova.com
+            </span>
+
+            <span>
+                <i class="fa-solid fa-mobile-screen"></i>
+                +91 98765 43210
+            </span>
+
+        </div>
+
+        <div class="top-social">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-behance"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-dribbble"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            CREOVA<span>.</span>
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a href="portfolio.html">
+                PORTFOLIO
+            </a>
+
+            <a href="blog.html" class="active">
+                BLOG
+            </a>
+
+            <a href="about.html">
+                ABOUT
+            </a>
+
+            <a href="services.html">
+                SERVICES
+            </a>
+
+            <a href="contact.html">
+                CONTACT
+            </a>
+
+        </nav>
+
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="page-hero">
+
+    <div class="hero-content">
+
+        <span>
+            DEVELOPMENT
+        </span>
+
+        <h1>
+            Responsive Design
+            <strong>For Every Screen.</strong>
+        </h1>
+
+        <p>
+            Why responsive websites create better experiences
+            across desktops, tablets and mobile devices.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ARTICLE ================= -->
+
+<section class="article-section">
+
+    <div class="article-container">
+
+
+        <!-- ARTICLE IMAGE -->
+
+        <div class="article-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1500&q=85"
+                alt="Responsive Web Development">
+
+        </div>
+
+
+        <!-- ARTICLE CONTENT -->
+
+        <article class="article-content">
+
+            <span class="article-category">
+                WEB DEVELOPMENT
+            </span>
+
+
+            <div class="article-meta">
+
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    August 02, 2026
+                </span>
+
+                <span>
+                    <i class="fa-regular fa-clock"></i>
+                    5 min read
+                </span>
+
+            </div>
+
+
+            <h2>
+                How Responsive Design Improves
+                User Experience
+            </h2>
+
+
+            <p>
+                People access websites from many different devices.
+                A visitor might open your website on a desktop in the
+                morning and use their smartphone later in the day.
+            </p>
+
+
+            <p>
+                Responsive web design ensures that the website
+                automatically adapts to different screen sizes,
+                providing a comfortable experience regardless of
+                the device being used.
+            </p>
+
+
+            <blockquote>
+                “A great website should feel natural on every
+                screen — not just the screen it was designed on.”
+            </blockquote>
+
+
+            <h3>
+                01. What Is Responsive Design?
+            </h3>
+
+            <p>
+                Responsive design is an approach to web development
+                where layouts, images, typography and other elements
+                adapt automatically to the available screen size.
+            </p>
+
+
+            <h3>
+                02. Better Mobile Experience
+            </h3>
+
+            <p>
+                Mobile users need interfaces that are easy to read
+                and interact with. Responsive layouts prevent users
+                from constantly zooming, scrolling horizontally or
+                struggling to click small buttons.
+            </p>
+
+
+            <h3>
+                03. Flexible Layouts
+            </h3>
+
+            <p>
+                Modern websites use flexible grids and containers
+                instead of fixed widths. This allows content to
+                resize naturally as the viewport changes.
+            </p>
+
+
+            <h3>
+                04. Responsive Images
+            </h3>
+
+            <p>
+                Images should scale according to their containers.
+                Using flexible image dimensions prevents content
+                from overflowing the screen.
+            </p>
+
+
+            <h3>
+                05. Mobile-Friendly Navigation
+            </h3>
+
+            <p>
+                Desktop navigation may contain many links, while
+                mobile interfaces need simpler navigation patterns.
+                A mobile menu can keep the interface clean while
+                providing access to all important pages.
+            </p>
+
+
+            <h3>
+                06. Faster and Cleaner Experience
+            </h3>
+
+            <p>
+                A carefully designed responsive website can reduce
+                unnecessary elements on smaller screens and make
+                important content easier to find.
+            </p>
+
+
+            <h3>
+                07. Better Accessibility
+            </h3>
+
+            <p>
+                Responsive layouts can improve readability and
+                interaction for users with different devices,
+                screen sizes and accessibility requirements.
+            </p>
+
+
+            <h3>
+                Final Thoughts
+            </h3>
+
+            <p>
+                Responsive design is no longer an optional feature.
+                It is an essential part of creating a modern digital
+                experience. Design for every screen and make sure
+                every visitor gets the same quality experience.
+            </p>
+
+
+            <a
+                href="blog.html"
+                class="back-button">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                BACK TO BLOG
+
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <h3>
+                WHO WE ARE
+            </h3>
+
+            <div class="footer-logo">
+                CREOVA<span>.</span>
+            </div>
+
+            <p>
+                A creative digital studio focused on design,
+                development and meaningful digital experiences.
+            </p>
+
+            <a
+                href="about.html"
+                class="more-link">
+
+                MORE ABOUT US
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                GET IN TOUCH
+            </h3>
+
+            <p>
+                Maharashtra, India
+            </p>
+
+            <p>
+                +91 98765 43210
+            </p>
+
+            <p>
+                hello@creova.com
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                EXPLORE
+            </h3>
+
+            <p>
+                <a href="index.html">
+                    Home
+                </a>
+            </p>
+
+            <p>
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+            </p>
+
+            <p>
+                <a href="blog.html">
+                    Blog
+                </a>
+            </p>
+
+            <p>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                FREE UPDATES
+            </h3>
+
+            <p>
+                Subscribe to receive our latest news,
+                creative ideas and project updates.
+            </p>
+
+            <form class="subscribe-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <button type="submit">
+                    SUBSCRIBE
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 CREOVA. All Rights Reserved.
+        </p>
+
+        <div>
+
+            <a href="index.html">Home</a>
+
+            <span>·</span>
+
+            <a href="portfolio.html">Portfolio</a>
+
+            <span>·</span>
+
+            <a href="blog.html">Blog</a>
+
+            <span>·</span>
+
+            <a href="about.html">About</a>
+
+            <span>·</span>
+
+            <a href="services.html">Services</a>
+
+            <span>·</span>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
